@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int  n;
+	cout << "Enter a number: ";
+	cin >> n;
+	if (n < 0)
+		cout << "\nError. please input positive integer...";
+	else{
+			
+		cout << "The divisors of " << n << " are:";
+		for (int i = 1; i <= n; ++i) {
+			n% i == 0;
+			cout << " " << i;
+				if (i < n)
+					cout << ",";
+		}
+	}
+	return 0;
+}
